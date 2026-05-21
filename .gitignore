@@ -1,0 +1,15 @@
+venv/
+backend/venv/
+
+node_modules/
+
+.next/
+frontend/.next/
+
+.env
+backend/.env
+
+backend/uploads/
+
+__pycache__/
+*.pyc
