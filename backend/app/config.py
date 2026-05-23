@@ -15,11 +15,12 @@ class Settings(BaseSettings):
     jwt_algorithm: str = "HS256"
     access_token_expire_minutes: int = 30
     refresh_token_expire_days: int = 7
-    cors_origins: List[str] = [
-    "http://localhost:3000",
-    "https://ai-mcqs-generator-7qmplvwye-ali-murtaza-s-projects1.vercel.app",
-    "https://ai-mcqs-generator.vercel.app",
-    ]
+    cors_origins: str = (
+    "http://localhost:3000,"
+    "https://ai-mcqs-generator-7qmplvwye-ali-murtaza-s-projects1.vercel.app,"
+    "https://ai-mcqs-generator.vercel.app"
+     )
+    
     max_file_size: int = 10_485_760
     upload_dir: str = "./uploads"
     openrouter_api_key: str | None = None
