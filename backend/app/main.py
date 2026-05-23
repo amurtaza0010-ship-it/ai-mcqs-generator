@@ -23,10 +23,11 @@ app = FastAPI(title="AI MCQ Generator API", version="1.0.0", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.cors_origins,
+    allow_origin_regex=r"https://.*\.vercel\.app",  # ✅ regex se sab Vercel URLs
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
-)
+    )
 
 app.include_router(auth.router, prefix="/api/v1/auth", tags=["auth"])
 app.include_router(upload.router, prefix="/api/v1/upload", tags=["upload"])

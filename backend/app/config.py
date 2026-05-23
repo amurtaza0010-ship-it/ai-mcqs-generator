@@ -17,8 +17,8 @@ class Settings(BaseSettings):
     refresh_token_expire_days: int = 7
     cors_origins: List[str] = [
     "http://localhost:3000",
-    "https://ai-mcqs-generator-7qmplvwye-ali-murtaza-s-projects1.vercel.app",
-    "https://ai-mcqs-generator.vercel.app"
+    "https://ai-mcqs-generator.vercel.app",
+    "https://*.vercel.app",  # ✅ sab Vercel URLs allow
     ]
     max_file_size: int = 10_485_760
     upload_dir: str = "./uploads"
