@@ -18,6 +18,7 @@ class Settings(BaseSettings):
     cors_origins: List[str] = [
     "http://localhost:3000",
     "https://ai-mcqs-generator-7qmplvwye-ali-murtaza-s-projects1.vercel.app",
+    "https://ai-mcqs-generator.vercel.app",
     ]
     max_file_size: int = 10_485_760
     upload_dir: str = "./uploads"
