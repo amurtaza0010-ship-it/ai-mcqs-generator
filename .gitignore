@@ -1,6 +1,16 @@
-.env
+# Python cache
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+
+# Environment
+backend/.env
+frontend/.env.local
+
+# Dependencies
 backend/venv/
-backend/uploads/
-backend/__pycache__/
 frontend/node_modules/
 frontend/.next/
+
+# Uploads
+backend/uploads/
